@@ -1,0 +1,8 @@
+C:\Users\ettika.chugh\source\repos\RapidPayIntegrationKitNetFramework\RapidPayIntegrationKitNetFramework\obj\Debug\RapidPayIntegrationKitNetFramework.csproj.CoreCompileInputs.cache
+C:\Users\ettika.chugh\source\repos\RapidPayIntegrationKitNetFramework\RapidPayIntegrationKitNetFramework\bin\Debug\RapidPayIntegrationKitNetFramework.dll
+C:\Users\ettika.chugh\source\repos\RapidPayIntegrationKitNetFramework\RapidPayIntegrationKitNetFramework\bin\Debug\RapidPayIntegrationKitNetFramework.pdb
+C:\Users\ettika.chugh\source\repos\RapidPayIntegrationKitNetFramework\RapidPayIntegrationKitNetFramework\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ettika.chugh\source\repos\RapidPayIntegrationKitNetFramework\RapidPayIntegrationKitNetFramework\bin\Debug\Newtonsoft.Json.xml
+C:\Users\ettika.chugh\source\repos\RapidPayIntegrationKitNetFramework\RapidPayIntegrationKitNetFramework\obj\Debug\RapidPayIntegrationKitNetFramework.csproj.CopyComplete
+C:\Users\ettika.chugh\source\repos\RapidPayIntegrationKitNetFramework\RapidPayIntegrationKitNetFramework\obj\Debug\RapidPayIntegrationKitNetFramework.dll
+C:\Users\ettika.chugh\source\repos\RapidPayIntegrationKitNetFramework\RapidPayIntegrationKitNetFramework\obj\Debug\RapidPayIntegrationKitNetFramework.pdb

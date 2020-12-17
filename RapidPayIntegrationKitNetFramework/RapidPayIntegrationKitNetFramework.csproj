@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5BDBF2AB-39D4-4BAD-8F76-DF6B78264B65}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RapidPayIntegrationKitNetFramework</RootNamespace>
+    <AssemblyName>RapidPayIntegrationKitNetFramework</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApiClients\Abstract\IApiIntegrationClient.cs" />
+    <Compile Include="ApiClients\Concrete\ApiIntegrationClient.cs" />
+    <Compile Include="ApiClients\CoreApiClient.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="DependentTxnRequestInitialiser\RefundRequestBuilder.cs" />
+    <Compile Include="DTO\AdditonalDataRequest.cs" />
+    <Compile Include="DTO\BillingAddressRequest.cs" />
+    <Compile Include="DTO\CustomerRequest.cs" />
+    <Compile Include="DTO\CustomHeader.cs" />
+    <Compile Include="DTO\MerchantRequest.cs" />
+    <Compile Include="DTO\OrderDetailsRequest.cs" />
+    <Compile Include="DTO\OrderTxnInfoRequest.cs" />
+    <Compile Include="DTO\PaymentRefundDataDto.cs" />
+    <Compile Include="DTO\ProductDetailsRequest.cs" />
+    <Compile Include="DTO\ProductInfoRequest.cs" />
+    <Compile Include="DTO\ShippingAddressRequest.cs" />
+    <Compile Include="Enums\EnumCurrency.cs" />
+    <Compile Include="Enums\EnumEnvironment.cs" />
+    <Compile Include="Enums\EnumOrderStatus.cs" />
+    <Compile Include="HttpRequest\AcceptPaymentRequest.cs" />
+    <Compile Include="HttpResponses\OrderDetailsResponseSentToMerchant.cs" />
+    <Compile Include="HttpResponses\OrderPaymentDetailResponseSentToMerchant.cs" />
+    <Compile Include="HttpResponses\PaymentDetailsResponseSentToMerchant.cs" />
+    <Compile Include="HttpResponses\Response.cs" />
+    <Compile Include="IRapidPayIntegration.cs" />
+    <Compile Include="OrderDataInitialiser\OrderDetailRequestBuilder.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RapidPayIntegration.cs" />
+    <Compile Include="Utilities\GenericUtility.cs" />
+    <Compile Include="VPCStringComparercs.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
